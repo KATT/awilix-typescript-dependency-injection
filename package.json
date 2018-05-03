@@ -1,0 +1,35 @@
+{
+  "name": "awilix-ts-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "playing around with awilix and typescript",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc -d",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "start": "node dist",
+    "test": "yarn build && yarn start",
+    "test:watch": "nodemon --watch src --exec yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KATT/awilix-ts-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KATT/awilix-ts-test/issues"
+  },
+  "homepage": "https://github.com/KATT/awilix-ts-test#readme",
+  "dependencies": {
+    "@types/node": "^10.0.3",
+    "awilix": "^3.0.7",
+    "yarn": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3",
+    "rimraf": "^2.6.2",
+    "ts-node": "^6.0.2",
+    "typescript": "^2.8.3"
+  }
+}
